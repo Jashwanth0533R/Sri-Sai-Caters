@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sai Caters | Exquisite Catering Services</title>
+    <meta name="description"
+        content="Premium catering services for all your special events. Elevating your moments with gourmet cuisine and impeccable service.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Sri Sai Caters</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#packages">Packages</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="menu.html" class="btn-primary desktop-btn">Get a Quote</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#packages" class="mobile-link">Packages</a>
+            <a href="#reviews" class="mobile-link">Reviews</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="menu.html" class="btn-primary mobile-btn">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <video autoplay loop muted playsinline>
+                <source src="main.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">CATERING FOR FUNCTIONS</div>
+            <h1 class="hero-title">Delicious Food for Your <span class="gradient-text">Special Events</span></h1>
+            <p class="hero-subtitle">We are a dedicated catering service. We take food orders for weddings, parties, and
+                all your special functions. Let us serve fresh and tasty food to your guests!</p>
+            <div class="hero-actions">
+                <a href="#packages" class="btn-primary">View Our Menus</a>
+                <a href="menu.html" class="btn-secondary">Book an Order <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">1,500+</div>
+                <div class="stat-label">Events Catered</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Curated Menus</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99%</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years of Excellence</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Amenities Section -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <span class="overline">OUR EXPERTISE</span>
+            <h2 class="section-title">Why Choose <span class="gradient-text">Us</span></h2>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card glass">
+                <div class="icon-wrapper">
+                    <i data-lucide="utensils"></i>
+                </div>
+                <h3>Fresh & Tasty Food</h3>
+                <p>We cook everything fresh for your order using the best quality ingredients to give your guests the
+                    best taste.
+                </p>
+            </div>
+            <div class="service-card glass">
+                <div class="icon-wrapper">
+                    <i data-lucide="gem"></i>
+                </div>
+                <h3>Beautiful Setup</h3>
+                <p>We don't just cook; we arrange the food beautifully at your function so it looks amazing.</p>
+            </div>
+            <div class="service-card glass">
+                <div class="icon-wrapper">
+                    <i data-lucide="users"></i>
+                </div>
+                <h3>Great Service</h3>
+                <p>Our team is polite and always ready to serve your guests with a smile during the event.</p>
+            </div>
+            <div class="service-card glass">
+                <div class="icon-wrapper">
+                    <i data-lucide="chef-hat"></i>
+                </div>
+                <h3>Your Choice of Menu</h3>
+                <p>You tell us what you want! We make a special menu that perfectly fits your function and guests.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section">
+        <div class="section-header">
+            <span class="overline">WHAT WE OFFER</span>
+            <h2 class="section-title">Catering <span class="gradient-text">Menu Plans</span></h2>
+            <p class="section-desc">Check out our popular food plans for your functions.</p>
+        </div>
+
+        <div class="packages-carousel">
+            <!-- Package 1 -->
+            <div class="package-card">
+                <div class="package-img">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=2070&auto=format&fit=crop"
+                        alt="Vegetarian Thali">
+                </div>
+                <div class="package-info glass">
+                    <div class="package-header">
+                        <span class="package-type">STANDARD</span>
+                        <h3>Basic Veg Menu</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">From ₹230</span>
+                        <span class="unit">/ plate</span>
+                    </div>
+                    <p class="package-desc">A simple, traditional, and delicious pure vegetarian meal perfect for any
+                        gathering or function.</p>
+                    <button class="package-link" onclick="openModal()"
+                        style="background:none;border:none;cursor:pointer;padding:0;">View Details <i
+                            data-lucide="chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="package-card">
+                <div class="package-img">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=2070&auto=format&fit=crop"
+                        alt="Chicken Biryani">
+                </div>
+                <div class="package-info glass">
+                    <div class="package-header">
+                        <span class="package-type">MIXED MENU</span>
+                        <h3>Mixed Menu (Veg & Non-Veg Basic)</h3>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">From ₹500</span>
+                        <span class="unit">/ plate</span>
+                    </div>
+                    <p class="package-desc">A perfect combination of popular vegetarian dishes and classic
+                        non-vegetarian favorites.</p>
+                    <button class="package-link" onclick="openModal('mixedModal')"
+                        style="background:none;border:none;cursor:pointer;padding:0;">View Details <i
+                            data-lucide="chevron-right"></i></button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Custom Menu CTA -->
+    <section class="custom-menu-cta glass" style="margin: 4rem 2rem; padding: 4rem 2rem; border-radius: var(--radius-md); text-align: center;">
+        <div class="section-header" style="margin-bottom: 2rem;">
+            <span class="overline">FLEXIBLE CHOICES</span>
+            <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 1rem;">Want to <span class="gradient-text">Customize?</span></h2>
+            <p class="section-desc">Don't want a fixed plan? Pick your own items and create a menu that perfectly fits your event.</p>
+        </div>
+        <a href="menu.html" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <i data-lucide="settings-2"></i> Customize Your Menu
+        </a>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="section-header">
+            <span class="overline">VOICES OF HAPPY GUESTS</span>
+            <h2 class="section-title">Google <span class="gradient-text">Reviews</span></h2>
+            <p class="section-desc">We are proud to serve our community with excellence. <a
+                    href="https://share.google/kIl9uzJlPBXTDu6dQ" target="_blank" class="gradient-text"
+                    style="font-weight: 600; text-decoration: underline;">Visit our Google Profile</a></p>
+        </div>
+
+        <div class="reviews-container">
+            <!-- Review 1 -->
+            <div class="review-card glass">
+                <div class="review-header">
+                    <div class="user-info">
+                        <div class="user-avatar">B</div>
+                        <div>
+                            <h4>Brahmam J</h4>
+                            <div class="stars">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="google-logo">
+                        <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                fill="#4285F4" />
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 12-4.53z"
+                                fill="#EA4335" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="review-text">"We recently hosted my daughter’s half-saree ceremony and arranged catering from Sri Sai Caterers. They were punctual, and the food was delicious. All our friends and relatives were very pleased with the quality and taste. I would highly recommend Sri Sai Caterers to anyone looking for homely and tasty food."</p>
+                <div class="review-date">A week ago</div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card glass">
+                <div class="review-header">
+                    <div class="user-info">
+                        <div class="user-avatar">J</div>
+                        <div>
+                            <h4>John Babu</h4>
+                            <div class="stars">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="google-logo">
+                        <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                fill="#4285F4" />
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 12-4.53z"
+                                fill="#EA4335" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="review-text">"Very testy and very hygienic in proper commitment. If any body searing for a nice food taste for their function absolutely this a 200% good choice."</p>
+                <div class="review-date">2 weeks ago</div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card glass">
+                <div class="review-header">
+                    <div class="user-info">
+                        <div class="user-avatar">R</div>
+                        <div>
+                            <h4>Raaj Varakavi</h4>
+                            <div class="stars">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="google-logo">
+                        <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                fill="#4285F4" />
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 12-4.53z"
+                                fill="#EA4335" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="review-text">"Thank you for a wonderful delicious food. I will recommend you to all my friends and families."</p>
+                <div class="review-date">1 month ago</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="contact" class="footer">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>Sri Sai Caters</h2>
+                    <p>Elevating your special moments with delicious food and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram" title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Google" title="Google">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path
+                                    d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44-3.88 0-7.27-2.6-7.27-7.27s3.39-7.27 7.27-7.27c1.76 0 3.3.61 4.54 1.76l2.19-2.19C17.15 2.61 14.85 1.5 12.18 1.5 6.32 1.5 1.5 6.32 1.5 12.18s4.82 10.68 10.68 10.68c5.63 0 10.15-3.86 10.15-10.15 0-.58-.08-1.13-.21-1.61z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Foodservice Dept" title="Foodservice Dept">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-list">
+                        <li><i data-lucide="map-pin"></i> Plot No 6, KGR Enclave, Ameenpur, Hyderabad</li>
+                        <li><i data-lucide="phone"></i> +91 9642182223 / 6301695167</li>
+                        <li><i data-lucide="mail"></i> srisaicatersameenpur@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-form-wrapper glass">
+                    <h3>Request a Quote</h3>
+                    <form class="footer-form" id="contactForm">
+                        <input type="text" placeholder="Name" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="text" placeholder="Event Date">
+                        <button type="submit" class="btn-primary w-full">Send Request</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sri Sai Caters. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Menu Modal -->
+        <div class="modal-overlay" id="menuModal">
+            <div class="modal-content glass">
+                <button class="modal-close" onclick="closeModal()"><i data-lucide="x"></i></button>
+                <div class="modal-header">
+                    <h2>Basic Veg Menu</h2>
+                    <span class="price">₹230 / plate</span>
+                </div>
+                <div class="modal-body">
+                    <ul class="menu-items-list">
+                        <li><i data-lucide="check-circle-2"></i> Salad</li>
+                        <li><i data-lucide="check-circle-2"></i> Any One Sweet</li>
+                        <li><i data-lucide="check-circle-2"></i> Any One Hot</li>
+                        <li><i data-lucide="check-circle-2"></i> Any One Roti</li>
+                        <li><i data-lucide="check-circle-2"></i> Gravy Curry</li>
+                        <li><i data-lucide="check-circle-2"></i> Biryani</li>
+                        <li><i data-lucide="check-circle-2"></i> Flavoured Rice</li>
+                        <li><i data-lucide="check-circle-2"></i> Gravy Curry</li>
+                        <li><i data-lucide="check-circle-2"></i> Raita</li>
+                        <li><i data-lucide="check-circle-2"></i> White Rice</li>
+                        <li><i data-lucide="check-circle-2"></i> Any Fry Item</li>
+                        <li><i data-lucide="check-circle-2"></i> Any Dal</li>
+                        <li><i data-lucide="check-circle-2"></i> Sambar</li>
+                        <li><i data-lucide="check-circle-2"></i> Pickle</li>
+                        <li><i data-lucide="check-circle-2"></i> Chips</li>
+                        <li><i data-lucide="check-circle-2"></i> Curd</li>
+                        <li><i data-lucide="check-circle-2"></i> Avakai</li>
+                        <li><i data-lucide="check-circle-2"></i> Plates</li>
+                        <li><i data-lucide="check-circle-2"></i> Glasses</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-primary w-full" onclick="bookMenuViaWhatsApp('Basic Veg Menu', '₹230 / plate', 'menuModal')">Book This Menu</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mixed Menu Modal -->
+        <div class="modal-overlay" id="mixedModal">
+            <div class="modal-content glass">
+                <button class="modal-close" onclick="closeModal('mixedModal')"><i data-lucide="x"></i></button>
+                <div class="modal-header">
+                    <h2>Mixed Menu (Veg & Non-Veg)</h2>
+                    <span class="price">₹500 / plate</span>
+                </div>
+                <div class="modal-body">
+                    <ul class="menu-items-list">
+                        <li><i data-lucide="check-circle-2"></i> Salad</li>
+                        <li><i data-lucide="check-circle-2"></i> Any One Sweet</li>
+                        <li><i data-lucide="check-circle-2"></i> Any One Heart</li>
+                        <li><i data-lucide="check-circle-2"></i> Roti</li>
+                        <li><i data-lucide="check-circle-2"></i> Mutton / Chicken Curry</li>
+                        <li><i data-lucide="check-circle-2"></i> Bagara Rice / Chicken Biryani</li>
+                        <li><i data-lucide="check-circle-2"></i> Raita</li>
+                        <li><i data-lucide="check-circle-2"></i> White Rice</li>
+                        <li><i data-lucide="check-circle-2"></i> Veg Curries (2)</li>
+                        <li><i data-lucide="check-circle-2"></i> Dal</li>
+                        <li><i data-lucide="check-circle-2"></i> Sambar / Rasam</li>
+                        <li><i data-lucide="check-circle-2"></i> Pickle</li>
+                        <li><i data-lucide="check-circle-2"></i> Chips</li>
+                        <li><i data-lucide="check-circle-2"></i> Avakai</li>
+                        <li><i data-lucide="check-circle-2"></i> Curd</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-primary w-full" onclick="bookMenuViaWhatsApp('Mixed Menu (Veg & Non-Veg)', '₹500 / plate', 'mixedModal')">Book This Menu</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Initialize Icons & Scripts -->
+        <script>
+            lucide.createIcons();
+        </script>
+        <script src="main.js"></script>
+</body>
+
+</html>

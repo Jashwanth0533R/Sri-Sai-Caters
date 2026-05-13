@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Menu - Sri Sai Caters</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="menu.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="index.html" class="back-link">
+                <i data-lucide="arrow-left"></i> Back to Home
+            </a>
+            <h1>Customize <span class="gradient-text">Your Menu</span></h1>
+            <p>Pick your items and watch your menu come to life in the preview.</p>
+        </header>
+
+        <section class="booking-details glass">
+            <div class="form-grid">
+                <div class="input-group">
+                    <label>Approx. Guests</label>
+                    <input type="number" id="members" placeholder="e.g. 100">
+                </div>
+                <div class="input-group">
+                    <label>Function Date</label>
+                    <input type="date" id="functionDate">
+                </div>
+                <div class="input-group">
+                    <label>Function Time</label>
+                    <input type="time" id="functionTime">
+                </div>
+                <div class="input-group">
+                    <label>Function Type</label>
+                    <input type="text" id="functionType" placeholder="e.g. Wedding, Birthday">
+                </div>
+            </div>
+        </section>
+
+        <div class="selection-layout">
+            <div class="menu-selection">
+                <div class="tabs glass">
+                    <button class="tab-btn active" onclick="switchTab('veg')">Vegetarian</button>
+                    <button class="tab-btn" onclick="switchTab('non-veg')">Non-Vegetarian</button>
+                    <button class="tab-btn" onclick="switchTab('others')">Desserts & Drinks</button>
+                </div>
+
+                <div id="menu-grid" class="menu-grid">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Cart Button -->
+        <button id="floating-cart" class="floating-cart" onclick="toggleCart()">
+            <i data-lucide="shopping-cart"></i>
+            <span id="cart-badge" class="cart-badge">0</span>
+        </button>
+
+        <!-- Cart Overlay -->
+        <div id="cart-overlay" class="cart-overlay" onclick="toggleCart()"></div>
+
+        <!-- Cart Sidebar -->
+        <aside class="selection-preview glass" id="preview-sidebar">
+            <div class="preview-header">
+                <h3>Your Selection</h3>
+                <div class="header-actions">
+                    <button onclick="clearSelection()" class="clear-btn">Clear All</button>
+                    <button onclick="toggleCart()" class="close-cart"><i data-lucide="x"></i></button>
+                </div>
+            </div>
+                <div id="selected-list" class="selected-list">
+                    <p class="empty-msg">No items selected yet</p>
+                </div>
+                <div class="preview-footer">
+                    <div class="total-count">
+                        <span id="items-count">0</span> Items Selected
+                    </div>
+                    <button onclick="sendToWhatsApp()" id="whatsapp-btn" class="btn-whatsapp" disabled>
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Get Quote
+                    </button>
+                </div>
+            </aside>
+    </div>
+
+    <script src="menu.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
